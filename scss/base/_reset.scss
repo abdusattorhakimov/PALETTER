@@ -1,0 +1,33 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Josefin Sans";
+  @include sitetitel(400, 1.6rem, 1.75, normal, $paragriph-color);
+  background: $site-bgcolor;
+}
+img {
+  display: flex;
+}
+.container {
+  width: 100%;
+  max-width: 1335px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-image: url("../imeges/svg/bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

@@ -1,0 +1,14 @@
+@mixin sitetitel($weight, $size, $height, $spacing, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  color: $color;
+}
+@mixin responsive($size) {
+  @if $size == tablet {
+    @media screen and (max-width: 700px) {
+      @content;
+    }
+  }
+}
